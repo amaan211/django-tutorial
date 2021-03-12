@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>home_view using render engine
+    {{name}}, {{occupation}}, {{marital_status}}, {{list}}
+
+    {% for i in list %}
+    <h1>{{i}}</h1>
+    <p>{{forloop.counter}}</p>
+    {% endfor %}
+</h1>
+{% endblock content %}
+
+
+
